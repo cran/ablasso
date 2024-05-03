@@ -1,0 +1,11 @@
+98aec2d775cecd9bc7a45c1a3e521abf *DESCRIPTION
+c8da630e4dbec4d4f1a3d17c6d1910c8 *NAMESPACE
+156d2a4ebebd3e017f019cf4030412a7 *R/data.R
+71bf981529bf462739edbfe4dcc7ebd6 *R/multivariate.R
+eb3e4d7a33bfa3f0a6f993d19553d861 *R/simulation.R
+594c7bee1d4269a1137419021741faa8 *data/covid_data.rda
+b999d7c5e70ccc22b024dd117fd2c354 *man/ablasso_mv_ss.Rd
+ab2e661db24da21981151a602edcab78 *man/ablasso_uv.Rd
+e132702bdfd898e41e6d0be408d9526f *man/ablasso_uv_ss.Rd
+f393d931c90924e9ea38dad5dd327622 *man/covid_data.Rd
+8a301242fff57d343339a239ec5cff40 *man/generate_data.Rd
