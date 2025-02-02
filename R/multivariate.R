@@ -116,9 +116,9 @@ ablasso_mv_ss <- function(Y, D, C,
           zz[I[[b]],((j-1)*(t-1)+1):(j*(t-1))] = t(C[[j]][1:(t-1),I[[b]]])
           zz[-I[[b]],((j-1)*(t-1)+1):(j*(t-1))] = t(C[[j]][1:(t-1),-I[[b]]])
         }
-        if(lag==1){if(t>lag+2){x[I[[b]],] = cbind(t(Y[1:(t-2),I[[b]]]), t(D[1:(t-1),I[[b]]]), zz[I[[b]],])}else{x[I[[b]],] = cbind(Y[1:(t-2),I[[b]]], t(D[1:(t-1),I[[b]]], zz[I[[b]],]))}}
+        if(lag==1){if(t>lag+2){x[I[[b]],] = cbind(t(Y[1:(t-2),I[[b]]]), t(D[1:(t-1),I[[b]]]), zz[I[[b]],])}else{x[I[[b]],] = cbind(Y[1:(t-2),I[[b]]], t(D[1:(t-1),I[[b]]]), zz[I[[b]],])}}
         if(lag>1){x[I[[b]],] = cbind(t(Y[1:(t-2),I[[b]]]), t(D[1:(t-1),I[[b]]]), zz[I[[b]],])}
-        if(lag==1){if(t>lag+2){x[-I[[b]],] = cbind(t(Y[1:(t-2),-I[[b]]]), t(D[1:(t-1),-I[[b]]], zz[-I[[b]],]))}else{x[-I[[b]],] = cbind(Y[1:(t-2),-I[[b]]], t(D[1:(t-1),-I[[b]]], zz[-I[[b]],]))}}
+        if(lag==1){if(t>lag+2){x[-I[[b]],] = cbind(t(Y[1:(t-2),-I[[b]]]), t(D[1:(t-1),-I[[b]]]), zz[-I[[b]],])}else{x[-I[[b]],] = cbind(Y[1:(t-2),-I[[b]]], t(D[1:(t-1),-I[[b]]]), zz[-I[[b]],])}}
         if(lag>1){x[-I[[b]],] = cbind(t(Y[1:(t-2),-I[[b]]]), t(D[1:(t-1),-I[[b]]]), zz[-I[[b]],])}
         fit1_s2 = hdm::rlasso(x[-I[[b]],], y1[-I[[b]]])
         Z[[t-lag-1]][I[[b]],1] = stats::predict(fit1_s2, x[I[[b]],])

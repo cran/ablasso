@@ -1,6 +1,6 @@
 Package: ablasso
 Title: Arellano-Bond LASSO Estimator for Dynamic Linear Panel Models
-Version: 1.0
+Version: 1.1
 Authors@R: 
     c(person(given="Victor", family="Chernozhukov", email="vchern@mit.edu", role = "aut"),
     person(given="Ivan", family="Fernandez-Val", email="ivanf@bu.edu", role = "aut"),
@@ -16,11 +16,11 @@ Imports: hdm, matrixStats, mvtnorm, stats
 Depends: R (>= 2.10)
 LazyData: true
 NeedsCompilation: no
-Packaged: 2024-05-02 20:33:33 UTC; junyuchen
+Packaged: 2025-02-02 12:25:17 UTC; junyuchen
 Author: Victor Chernozhukov [aut],
   Ivan Fernandez-Val [aut],
   Chen Huang [aut],
   Weining Wang [aut],
   Junyu Chen [cre]
 Repository: CRAN
-Date/Publication: 2024-05-03 13:00:13 UTC
+Date/Publication: 2025-02-02 12:50:07 UTC
